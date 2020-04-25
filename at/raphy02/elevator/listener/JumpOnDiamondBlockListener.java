@@ -30,7 +30,7 @@ public class JumpOnDiamondBlockListener implements Listener {
                             if(block_new.getBlockData().getMaterial() == Material.DIAMOND_BLOCK || block_new.getBlockData().getMaterial() == Material.IRON_BLOCK || block_new.getBlockData().getMaterial() == Material.EMERALD_BLOCK) {
                                 loc.setY(i+1);
                                 player.teleport(loc);
-                                player.sendTitle("§aHoch", null, 10, 10, 10);
+                                player.sendTitle("§aUp", null, 10, 10, 10);
                                 player.playSound(player.getLocation(), Sound.BLOCK_NOTE_BLOCK_HARP, 1f, 1f);
                                 break;
                             }

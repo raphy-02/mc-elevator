@@ -29,7 +29,7 @@ public class SneakOnDiamondBlockListener implements Listener {
                         if(block_new.getBlockData().getMaterial() == Material.DIAMOND_BLOCK || block_new.getBlockData().getMaterial() == Material.IRON_BLOCK || block_new.getBlockData().getMaterial() == Material.EMERALD_BLOCK) {
                             loc.setY(i+1);
                             player.teleport(loc);
-                            player.sendTitle("§cRunter", null, 10, 10, 10);
+                            player.sendTitle("§cDown", null, 10, 10, 10);
                             player.playSound(player.getLocation(), Sound.BLOCK_NOTE_BLOCK_BASS, 1f, 1f);
                             break;
                         }
