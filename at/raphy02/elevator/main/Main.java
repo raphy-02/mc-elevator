@@ -1,11 +1,10 @@
 package at.raphy02.elevator.main;
 
+import at.raphy02.elevator.listener.JumpOnDiamondBlockListener;
+import at.raphy02.elevator.listener.SneakOnDiamondBlockListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import at.raphy02.elevator.listener.JumpOnDiamondBlockListener;
-import at.raphy02.elevator.listener.SneakOnDiamondBlockListener;
 
 public class Main extends JavaPlugin {
 
