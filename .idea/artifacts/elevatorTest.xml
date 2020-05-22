@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="elevatorTest">
-    <output-path>$PROJECT_DIR$/../../Server/spigot-1.15.2/plugins</output-path>
-    <root id="archive" name="elevatorTest.jar">
-      <element id="module-output" name="elevator" />
-      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
-    </root>
-  </artifact>
-</component>
