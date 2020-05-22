@@ -18,7 +18,7 @@ public class SneakOnDiamondBlockListener implements Listener {
         Block block = loc.add(0, -0.1,0).getBlock();
 
         // Permission
-        if(player.hasPermission("test02.elevator")) {
+        //if(player.hasPermission("elevator.sneak")) {
             if (block.getBlockData().getMaterial() != Material.AIR) {
                 if (block.getBlockData().getMaterial() == Material.DIAMOND_BLOCK || block.getBlockData().getMaterial() == Material.IRON_BLOCK || block.getBlockData().getMaterial() == Material.EMERALD_BLOCK) {
                     double i = loc.getY()-1;
@@ -37,6 +37,6 @@ public class SneakOnDiamondBlockListener implements Listener {
                     }
                 }
             }
-        }
+        //}
     }
 }

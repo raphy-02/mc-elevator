@@ -18,7 +18,7 @@ public class JumpOnDiamondBlockListener implements Listener {
         Block block = loc.add(0, -0.1,0).getBlock();
 
         // Permission
-        if(player.hasPermission("test02.elevator")) {
+        //if(player.hasPermission("elevator.jump")) {
             if (block.getBlockData().getMaterial() != Material.AIR) {
                 if (player.getVelocity().getY() > 0.3) {
                     if(block.getBlockData().getMaterial() == Material.DIAMOND_BLOCK || block.getBlockData().getMaterial() == Material.IRON_BLOCK || block.getBlockData().getMaterial() == Material.EMERALD_BLOCK) {
@@ -39,6 +39,6 @@ public class JumpOnDiamondBlockListener implements Listener {
                     }
                 }
             }
-        }
+        //}
     }
 }
