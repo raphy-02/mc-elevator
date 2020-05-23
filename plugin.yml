@@ -1,6 +1,15 @@
 main: at.raphy02.elevator.main.Main
-name: Elevator
-version: 1.2
-description: DESCRIPTION
-author: raphy02
+name: SimpleElevator
+version: 1.3
+description: This is a plugin for fast traveling up and down with elevators.
+api-version: 1.13
+author: raphy_02
 webiste: www.raphaelbernhart.at
+
+commands:
+  elevator:
+    description: Sets various settings
+    aliases:
+      - simpleelevator
+      - se
+      - ev
