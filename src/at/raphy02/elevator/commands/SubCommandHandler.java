@@ -17,6 +17,10 @@ public class SubCommandHandler implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if( sender instanceof Player || args[0].equalsIgnoreCase("setDebugMode" )) {
             Player player = (Player) sender;
+            if(args.length == 0){
+                sender.sendMessage(Main.prefix + "§cPlease use a real command.");
+                return false;
+            }
             switch( args[0].toLowerCase() ) {
                 case "setdebugmode":
                     new DebugModeCommand(plugin, sender, command, label, args);
